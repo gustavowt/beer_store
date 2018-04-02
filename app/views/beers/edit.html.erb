@@ -1,0 +1,8 @@
+<h1>Editing Beer</h1>
+
+<%= form_with(model: @beer, local: true) do |form| %>
+  <%= render 'form', beer: @beer, form: form %>
+<% end %>
+
+<%= link_to 'Show', @beer %> |
+<%= link_to 'Back', beers_path %>
